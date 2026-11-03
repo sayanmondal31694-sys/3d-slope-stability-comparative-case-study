@@ -1,0 +1,116 @@
+    *************************************************************
+                               Scoops3D
+          3D Slope Stability Throughout a Digital Landscape
+                        U.S. Geological Survey
+                             Version: 1.3.01, rev. 03/1/2023                            
+    *************************************************************
+
+
+This file: C:\Users\Sayan Mondal\Documents\pix4d\mongolia_oyutolgoi_trial_output\mongolia_oyutolgoi_trial_out.txt                                                                                                                      
+
+Start date and time: 10/14/2026  20:02:47
+Description: Mongolia Trial                                                                                                          
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+I. INPUT FILES:
+  DEM file: C:\Users\Sayan Mondal\Documents\pix4d\quarry.asc                                                                                                                                                                            
+  Main parameter input file: C:\Users\Sayan Mondal\Documents\pix4d\mongolia_oyutolgoi_trial.scp                                                                                                                                                          
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+II. SIMULATION PARAMETERS:
+------------
+DEM
+Input file for topography: C:\Users\Sayan Mondal\Documents\pix4d\quarry.asc                                                                                                                                                                            
+  Dimensions of DEM grid (x,y):                                      131    98
+  Number of cells in DEM grid:                                           12838
+  Number of non-null cells in DEM grid:                                   9299
+  Horizontal resolution of DEM grid (m ):                                10.00
+  Minimum elevation of DEM (m ):                                       496.392
+  Maximum elevation of DEM (m ):                                       663.294
+  xllcorner and yllcorner (m ):                      310968.395    5169194.642
+------------
+UNIT DESCRIPTORS (used for labels in output files)
+lengthunits   ceeunits    gammaunits
+     m          kPa         kN/m^3  
+------------
+MATERIAL PROPERTIES
+Property input method:                                                  layers
+Number of layers (nmat):                                                     1
+                      total unit wt.  
+lnum    cee     phi      gamt      ru
+        kPa             kN/m^3  
+  1    180.00  42.000   26.500    0.000 
+------------
+GROUNDWATER CONFIGURATION
+Groundwater method (water):                                                 Ru
+  See material properties for Ru values in each material
+------------
+EARTHQUAKE LOADING
+Horizontal pseudo-acceleration coefficient (dimensionless)(eqcoef):      0.120
+------------
+LIMIT-EQUILIBRIUM METHOD
+Analysis method (method):                                               Bishop
+------------
+SEARCH METHOD (srch)                                                       box
+POTENTIAL FAILURE SIZE CONTROLS
+Primary constraint, volume,area,depth (vacriterion):                    Volume
+Surface area is not a criterion for size restriction.
+Volume range of potential failures (m ^3)(vmin, vmax):     5.000E+04 1.000E+05
+Tolerance amount for initial potential failure volume (tol):         5.000E+03
+Minimum number of active columns in potential failure required,
+      otherwise error message generated (limcol):                          100
+SEARCH-LATTICE EXTENT AND RESOLUTION
+VERTICAL EXTENT AND RESOLUTION
+Minimum elevation of search-lattice nodes (m ) (zsmin):                450.000
+Maximum elevation of search-lattice nodes (m ) (zsmax):                700.000
+Search-lattice vertical spacing (m ) (zsrchres):                        10.000
+Increment amount for potential failure surface sphere radius(m )(dr):    5.000
+HORIZONTAL EXTENT AND RESOLUTION
+Starting search-lattice horizontal node (ismin,jsmin):                  1    1
+Ending search-lattice horizontal node (ismax,jsmax):                  131   98
+Horizontal spacing - multiple of DEM resolution (nsrchres):                  1
+------------
+ADDITIONAL OUTPUT FILES AND PARAMETERS
+Create new DEM file (remove):                                                N
+   (no surfaces removed)
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+III. OUTPUT FILES GENERATED: 
+
+     LOCATION FOR OUTPUT FILES:
+          C:\Users\Sayan Mondal\Documents\pix4d\mongolia_oyutolgoi_trial_output\                                                                                                                                                      
+
+      mongolia_oyutolgoi_trial_out.txt
+      mongolia_oyutolgoi_trial_errors_out.txt
+      mongolia_oyutolgoi_trial_slope_out.asc
+        Range: [    0.0003,       76.6143]
+      mongolia_oyutolgoi_trial_fos3d_out.asc
+        Range: [    1.1441,       15.7164]
+      mongolia_oyutolgoi_trial_ordfos3d_out.asc
+        Range: [    1.1148,       15.0273]
+      mongolia_oyutolgoi_trial_fosvol_out.asc
+        Range: [  5.0009E+04,  9.9997E+04]
+      mongolia_oyutolgoi_trial_spheres_out.okc
+
+     Optional files generated:
+      mongolia_oyutolgoi_trial_ncolerr_out.txt
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+IV. RESULTS:
+Number of trial surfaces tried:                                         127450
+Number of surfaces with active column totals less than limcol:          100013
+     Check file ncolerr_out for detailed information.
+------------
+3D POTENTIAL FAILURE - GLOBAL MINIMUM
+Bishop's 3D factor of safety:                                           1.1441
+Ordinary 3D factor of safety:                                           1.1168
+Volume (m ^3):                                                     6.21288E+04
+Horizontal surface area (m ^2):                                    2.29649E+03
+Slip surface area (m ^2):                                          4.35159E+03
+Weight (kg):                                                       1.64641E+06
+Number of active columns:                                                   36
+      x-center         y-center         z-center      radius
+     312113.3952     5169869.6418         580.0000  9.05390E+01
+Slip direction, relative to search lattice:                           133.7148
+End date and time: 10/14/2026  20:03:00
+Elapsed cpu time in seconds:   1.25000E+01
